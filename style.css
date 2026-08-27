@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 { margin-bottom: 0.5rem; color: #2c3e50; }
+p { margin-bottom: 1.5rem; color: #7f8c8d; font-size: 0.9rem; }
+
+.busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #2980b9; }
+
+.resultado-area { margin-top: 1.5rem; }
+
+.cartao-pais { text-align: left; }
+.cartao-pais img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #ddd; }
+.erro { color: #e74c3c; font-weight: bold; }
