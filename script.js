@@ -1,3 +1,5 @@
+const API_KEY = 'rc_live_demo';
+
 async function buscarDados(termo) {
 
     const area = document.getElementById("resultado");
