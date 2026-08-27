@@ -20,7 +20,7 @@ async function buscarDados(termo) {
             </div>
         `;
     } catch (erro) {
-        area.innerHTML = `<p class="erro">Ops! Não encontramos nenhum país chamado "${termo}". Tente novamente (em inglês).</p>`;
+        area.innerHTML = `<p class="erro">Não foi encontrado nenhum país chamado "${termo}". Verifique a escrita correta.</p>`;
     }
 }
 
