@@ -1,19 +1,25 @@
 async function buscarDados(termo) {
+
     const area = document.getElementById("resultado");
     
     area.innerHTML = "<p>Buscando informações...</p>";
     
     try {
-        const resposta = await fetch(`https://restcountries.com/v5/name/${termo}`);
+        const resposta = await fetch(`https://api.restcountries.com/countries/v5/name?q=${termo}`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${API_KEY}`
+            }
+        });
         
         if (!resposta.ok) throw new Error("País não encontrado");
         const dados = await resposta.json();
-        const pais = dados[0];
+        const pais = dados.items[0];
 
         area.innerHTML = `
             <div class="cartao-pais">
-                <img src="${pais.flags.svg}" alt="Bandeira de ${pais.name.common}">
-                <h2>${pais.name.common}</h2>
+                <img src="${pais.flag.svg}" alt="Bandeira de ${pais.name.common}">
+                <h2>${pais.names.common}</h2>
                 <p><strong>Capital:</strong> ${pais.capital ? pais.capital[0] : "Não possui"}</p>
                 <p><strong>Continente:</strong> ${pais.region}</p>
                 <p><strong>População:</strong> ${pais.population.toLocaleString("pt-BR")}</p>
