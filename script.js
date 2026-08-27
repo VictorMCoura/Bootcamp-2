@@ -4,7 +4,7 @@ async function buscarDados(termo) {
     area.innerHTML = "<p>Buscando informações...</p>";
     
     try {
-        const resposta = await fetch(`https://restcountries.com/v3.1/name/${termo}`);
+        const resposta = await fetch(`https://restcountries.com/v5/name/${termo}`);
         
         if (!resposta.ok) throw new Error("País não encontrado");
         const dados = await resposta.json();
