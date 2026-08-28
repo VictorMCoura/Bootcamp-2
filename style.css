@@ -24,8 +24,17 @@ body {
     text-align: center;
 }
 
-h1 { margin-bottom: 0.5rem; color: #2c3e50; }
-p { margin-bottom: 1.5rem; color: #7f8c8d; font-size: 0.9rem; }
+
+h1 { 
+    margin-bottom: 0.5rem; 
+    color: #cc0000; 
+}
+
+p { 
+    margin-bottom: 1.5rem; 
+    color: #7f8c8d; 
+    font-size: 0.9rem; 
+}
 
 .busca {
     display: flex;
@@ -43,7 +52,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #cc0000;
     color: white;
     border: none;
     border-radius: 6px;
@@ -52,10 +61,20 @@ button {
     transition: background 0.3s;
 }
 
-button:hover { background-color: #2980b9; }
+button:hover { 
+    background-color: #a30000; 
+}
 
-.resultado-area { margin-top: 1.5rem; }
+.resultado-area { 
+    margin-top: 1.5rem; 
+}
 
-.cartao-pais { text-align: left; }
-.cartao-pais img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #ddd; }
-.erro { color: #e74c3c; font-weight: bold; }
+.cartao-pais { 
+    text-align: left; 
+}
+
+.cartao-pais p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
