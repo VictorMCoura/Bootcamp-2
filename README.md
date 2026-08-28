@@ -17,5 +17,5 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 - Suporte à tecla "Enter" para facilitar a busca.
 
 ## Links
-- **Aplicação no ar (GitHub Pages):** https://SEU-USUARIO.github.io/bootcamp2-app/
+- **Aplicação no ar (GitHub Pages):** (https://victormcoura.github.io/Bootcamp-2/)
 - **Repositório:** https://github.com/VictorMCoura/Bootcamp-2
