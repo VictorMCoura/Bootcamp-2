@@ -15,6 +15,10 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 - Exibição de arte oficial, Tipos, Peso e Altura.
 - Tratamento de erro amigável caso o usuário digite um nome inexistente.
 - Suporte à tecla "Enter" para facilitar a busca.
+  
+- ## Como executar localmente
+1. Clone: `git clone https://github.com/VictorMCoura/Bootcamp-2`
+2. Abra o arquivo `index.html` no navegador
 
 ## Links
 - **Aplicação no ar (GitHub Pages):** (https://victormcoura.github.io/Bootcamp-2/)
