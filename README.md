@@ -20,7 +20,7 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 -  Operações CRUD: Funcionalidades integradas para listar, adicionar e excluir favoritos diretamente na interface.
 
 ## Links
-- **Aplicação no ar (GitHub Pages):** https://victormcoura.github.io/Bootcamp-2/
+- **Aplicação no ar (GitHub Pages):** https://victormcoura.github.io/Bootcamp-2/app/
 - **Repositório:** https://github.com/VictorMCoura/Bootcamp-2
 - **Imagem no Docker Hub:** https://hub.docker.com/repository/docker/victorcoura123/bootcamp2-app/general
 
