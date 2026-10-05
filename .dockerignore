@@ -1,0 +1,12 @@
+.git
+.gitignore
+.env
+.env.*
+README.md
+screenshots
+docs
+*.png
+*.jpg
+*.jpeg
+.DS_Store
+Thumbs.db
