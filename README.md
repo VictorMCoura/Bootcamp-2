@@ -22,7 +22,7 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 ## Links
 - **Aplicação no ar (GitHub Pages):** https://victormcoura.github.io/Bootcamp-2/
 - **Repositório:** https://github.com/VictorMCoura/Bootcamp-2
-- ** Imagem no Docker Hub:** https://hub.docker.com/repository/docker/victorcoura123/bootcamp2-app/general
+- **Imagem no Docker Hub:** https://hub.docker.com/repository/docker/victorcoura123/bootcamp2-app/general
 
 ---
 
