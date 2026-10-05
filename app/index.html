@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Pokédex</h1>
+        <p>Digite o nome de um Pokémon que deseja procurar</p>
+        
+        <div class="busca">
+            <input type="text" id="campo-busca" placeholder="Digite o nome do Pokémon...">
+            <button id="botao-buscar">Buscar</button>
+        </div>
+
+        <div id="resultado" class="resultado-area">
+        </div>
+    </main>
+
+    <section id="favoritos-container" class="favoritos-secao">
+        <div class="favoritos-header">
+            <h2> Meus Favoritos Salvos</h2>
+            <span id="favoritos-contador" class="badge">0 itens</span>
+        </div>
+        <div id="favoritos-lista" class="favoritos-grid">
+            <p class="empty-state">Carregando favoritos...</p>
+        </div>
+    </section>
+
+    <script type="module" src="supabase-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
