@@ -65,7 +65,7 @@ O arquivo `.dockerignore` foi criado para excluir da imagem itens como a pasta `
 ### SQ2 · Versionamento de imagem
 Foram publicadas três tags da imagem no Docker Hub: `1.0` (primeira versão funcional), `1.1` (versão após melhoria na aplicação) e `latest`.
 
-![Tags no Docker Hub](screenshots/Captura%de%tela%2026-10-05%153612.png)
+![Tags no Docker Hub](screenshots/)
 
 ### SQ3 · Descrição no Docker Hub
 O *Overview* do repositório no Docker Hub foi preenchido com a descrição da aplicação, o link do repositório no GitHub e o comando `docker run` pronto para copiar.
@@ -75,7 +75,7 @@ O *Overview* do repositório no Docker Hub foi preenchido com a descrição da a
 ### SQ4 · Explorando a orquestração
 Dois containers da aplicação foram executados simultaneamente, nas portas 8080 e 8081. O print do `docker ps` mostra os dois em execução:
 
-![Docker ps com dois containers](screenshots/Captura%de%tela%2026-10-05%142048.png)
+![Docker ps com dois containers](screenshots/)
 
 **"Se eu tivesse 100 containers, como gerenciaria?"**
 
