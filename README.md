@@ -22,7 +22,7 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 ## Links
 - **Aplicação no ar (GitHub Pages):** https://victormcoura.github.io/Bootcamp-2/
 - **Repositório:** https://github.com/VictorMCoura/Bootcamp-2
-- **[Novo] Imagem no Docker Hub:** https://hub.docker.com/repository/docker/victorcoura123/bootcamp2-app/general
+- ** Imagem no Docker Hub:** https://hub.docker.com/repository/docker/victorcoura123/bootcamp2-app/general
 
 ---
 
@@ -31,9 +31,9 @@ Execute o comando abaixo no terminal para baixar a imagem pública e rodar a apl
 
 ```bash
 docker run -d -p 8080:80 victorcoura123/bootcamp2-app:latest
-
+```
 ## Evidências das Sidequests 
-
+```
 - **SQ1 · Arquivo `.dockerignore`:** 
   O arquivo `.dockerignore` foi criado para excluir pastas como `.git` e arquivos como `README.md` e capturas de tela. Isso deixa o processo de build mais rápido porque o Docker não precisa transferir arquivos inúteis para o daemon (motor do Docker) durante a construção. Além disso, a imagem final fica menor e mais segura, pois contém estritamente o necessário para a aplicação rodar, sem vazar histórico de versionamento.
 
