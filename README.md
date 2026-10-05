@@ -19,6 +19,15 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 - Sistema de Favoritos: Salva as escolhas do usuário, sobrevivendo ao fechamento do navegador.
 -  Operações CRUD: Funcionalidades integradas para listar, adicionar e excluir favoritos diretamente na interface.
 
+## Persistência
+- A persistência foi implementada utilizando Supabase (PostgreSQL) com comunicação direta pelo frontend.
+- O que é salvo:
+- A tabela favoritos armazena o id (chave primária)
+- A data de criação (criado_em)
+- O nome_item (Nome do Pokémon)
+- Os dados_extra (Sprite/Imagem oficial para exibição na lista).
+- Limitação Conhecida (RLS): Para viabilizar a arquitetura frontend sem sistema de login complexo nesta etapa, a tabela utiliza políticas de Row Level Security (RLS) abertas para a role anon, permitindo leitura, inserção e deleção públicas.
+
 ## Links
 - **Aplicação no ar (GitHub Pages):** https://victormcoura.github.io/Bootcamp-2/app/
 - **Repositório:** https://github.com/VictorMCoura/Bootcamp-2
