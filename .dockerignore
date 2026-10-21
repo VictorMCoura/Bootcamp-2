@@ -10,3 +10,4 @@ docs
 *.jpeg
 .DS_Store
 Thumbs.db
+node_modules/
