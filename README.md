@@ -3,6 +3,8 @@
 ## Autor
 Victor De Mesquita Coura — 22604354
 
+*Nota: Para a etapa 3 o projeto que foi desenvolvido individualmente passou por adaptações. Para cumprir integralmente o processo técnico de proteção da branch `main`, revisão obrigatória de código e validação via CI, o fluxo de Pull Requests e aprovações foi executado com o auxílio de uma conta secundária revisora.*
+
 ## Descrição
 Uma aplicação web rápida e amigável que consome dados do universo Pokémon, permitindo que o usuário consulte informações básicas e o visual oficial de diversas espécies. Na segunda etapa do projeto, a aplicação ganhou persistência de dados em nuvem para salvar os favoritos e foi conteinerizada com Docker.
 
@@ -18,6 +20,7 @@ Uma aplicação web rápida e amigável que consome dados do universo Pokémon, 
 - Suporte à tecla "Enter" para facilitar a busca.
 - **Sistema de Favoritos:** salva as escolhas do usuário em banco de dados, sobrevivendo ao fechamento do navegador.
 - **Operações CRUD:** listar, adicionar e excluir favoritos diretamente na interface.
+- **Validação e Testes Automatizados (Etapa 03):** validação de entradas, formatação de nomes e conversão de medidas testadas automaticamente com Jest a cada Pull Request.
 
 ## Links
 | Item | Link |
