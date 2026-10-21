@@ -47,12 +47,18 @@ async function buscarDados(termo) {
 
 document.getElementById("botao-buscar").addEventListener("click", () => {
     const termo = document.getElementById("campo-busca").value.trim();
-    
-    if (!validarTermoBusca(termo)) {
-    alert("Digite um nome de Pokémon válido!");
-    return;
-}
-    if (termo) buscarDados(termo);
+
+    if (typeof validarTermoBusca === "function") {
+        if (!validarTermoBusca(termo)) {
+            alert("Digite um nome de Pokémon válido!");
+            return;
+        }
+    } else if (!termo) {
+        alert("Digite um nome de Pokémon válido!");
+        return;
+    }
+
+    buscarDados(termo);
 });
 
 document.getElementById("campo-busca").addEventListener("keypress", (e) => {
