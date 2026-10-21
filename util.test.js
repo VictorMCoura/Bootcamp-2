@@ -1,4 +1,4 @@
-const { validarTermoBusca, formatarNomePokemon, converterMedidas } = require("./utils");
+const { validarTermoBusca, formatarNomePokemon, converterMedidas } = require("./util");
 
 test("rejeita termo de busca vazio", () => {
     expect(validarTermoBusca("")).toBe(false);
