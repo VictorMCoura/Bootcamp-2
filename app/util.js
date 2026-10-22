@@ -1,7 +1,7 @@
 function validarTermoBusca(termo) {
     if (!termo || typeof termo !== "string") return false;
     const limpo = termo.trim();
-    return limpo.length > 0 && limpo.length <= 30;
+    return limpo.length <= 30 && /^[a-z0-9]+(?:-[a-z0-9]+)*$/i.test(limpo);
 }
 
 function formatarNomePokemon(nome) {
@@ -17,6 +17,14 @@ function converterMedidas(pesoHectogramas, alturaDecimetros) {
     };
 }
 
+function registrarVoto(supabase, nomeItem, dadosExtra, sessaoId) {
+    return supabase.rpc("registrar_voto", {
+        p_nome_item: nomeItem,
+        p_dados_extra: dadosExtra,
+        p_sessao_id: sessaoId
+    });
+}
+
 if (typeof module !== "undefined" && module.exports) {
-    module.exports = { validarTermoBusca, formatarNomePokemon, converterMedidas };
+    module.exports = { validarTermoBusca, formatarNomePokemon, converterMedidas, registrarVoto };
 }
