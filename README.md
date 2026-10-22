@@ -58,6 +58,20 @@ docker rm <container>
 | `dados_extra` | Sprite/imagem oficial, usada para exibir o item na lista |
 | `quantidade_favoritos` | Quantidade global de vezes que o Pokémon foi favoritado |
 
+## Testes Automatizados e Integração Contínua (CI)
+A aplicação conta com testes unitários automatizados desenvolvidos com **Jest** (`util.test.js`), validando as funções puras de regra de negócio do arquivo `util.js`:
+
+### Como rodar os testes localmente
+No terminal, na raiz do projeto, execute:
+
+```bash
+# 1. Instalar as dependências de desenvolvimento (Jest)
+npm install
+
+# 2. Executar a suíte de testes
+npm test
+````
+
 ## Evidências das Sidequests
 
 ### SQ1 · Arquivo `.dockerignore`
