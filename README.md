@@ -41,7 +41,7 @@ Depois, acesse **http://localhost:8080** no navegador.
 Para parar e remover o container:
 
 ```bash
-docker ps                # descobre o ID/nome do container
+docker ps              
 docker stop <container>
 docker rm <container>
 ```
@@ -56,9 +56,7 @@ docker rm <container>
 | `criado_em` | Data/hora de criação do registro |
 | `nome_item` | Nome do Pokémon favoritado |
 | `dados_extra` | Sprite/imagem oficial, usada para exibir o item na lista |
-
-- **Operações implementadas:** criar (botão "Favoritar"), listar (seção "Meus favoritos", carregada ao abrir a página) e excluir (botão de remover em cada item).
-- **Limitação conhecida (RLS):** para viabilizar a arquitetura somente com frontend, sem sistema de login nesta etapa, a tabela utiliza políticas de Row Level Security (RLS) abertas para a role `anon`, permitindo leitura, inserção e deleção públicas. Em um ambiente de produção, a solução seria adicionar autenticação e políticas por usuário.
+| `quantidade_favoritos` | Quantidade global de vezes que o Pokémon foi favoritado |
 
 ## Evidências das Sidequests
 

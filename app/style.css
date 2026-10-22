@@ -108,6 +108,13 @@ button:hover {
   margin: 0;
 }
 
+.favoritos-titulos h3 {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
 .badge {
   background-color: #3b82f6;
   color: #ffffff;
@@ -199,4 +206,21 @@ button:hover {
 
 .btn-favoritar:hover {
   background-color: #d97706;
+}
+
+.btn-favoritar-lista {
+  padding: 0.4rem 0.6rem;
+  background-color: #f59e0b;
+  font-size: 0.8rem;
+}
+
+.btn-favoritar-lista:hover {
+  background-color: #d97706;
+}
+
+.btn-voto-removido,
+.btn-voto-removido:hover {
+  background-color: #e2e8f0;
+  color: #64748b;
+  cursor: not-allowed;
 }

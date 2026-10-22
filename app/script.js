@@ -23,7 +23,7 @@ async function buscarDados(termo) {
                 <p><strong> Altura:</strong> ${dados.height / 10} m</p>
                 
                 <button type="button" class="btn-favoritar" id="btn-add-fav">
-                     Adicionar aos Favoritos
+                     Votar nos Favoritos
                 </button>
             </div>
         `;
@@ -33,7 +33,7 @@ async function buscarDados(termo) {
             if (typeof window.adicionarFavoritoApp === "function") {
                 window.adicionarFavoritoApp(dados.name, { sprite: spriteOriginal });
             } else {
-                alert("O banco de dados ainda não conectou. Pressione F12 e olhe a aba Console.");
+                alert("Erro na aplicação, tente mais tarde.");
             }
         };
 
